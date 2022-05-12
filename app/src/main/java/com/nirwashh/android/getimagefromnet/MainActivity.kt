@@ -32,6 +32,7 @@ class MainActivity : AppCompatActivity() {
     private fun getImageFromGlide() {
         Glide.with(this).load(URL)
             .centerCrop()
+            .circleCrop()
             .override(720, 1080)
             .placeholder(R.drawable.ic_media_pause)
             .into(b.imgView)
